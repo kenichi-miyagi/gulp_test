@@ -1,0 +1,33 @@
+{
+  "name": "okinawa-template",
+  "version": "1.0.0",
+  "description": "沖縄用標準テンプレート",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "connect-ssi": "^1.1.1",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-csslint": "^1.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-imageoptim": "^1.0.9",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Android >= 5",
+    "ios >= 10",
+    "ie >= 11"
+  ]
+}

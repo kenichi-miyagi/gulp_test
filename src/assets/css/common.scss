@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #00ffff;
+}
+.hogehoge {
+    font-size: 30px;
+    color: #ff00ff;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    &--xs {
+        font-size: 12px;
+    }
+    &--xxs {
+        font-size: 10px;
+    }
+}
