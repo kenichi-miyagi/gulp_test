@@ -3,7 +3,6 @@ const gulp = require("gulp");
 
 // css
 const sass = require("gulp-sass");
-//const csslint = require("gulp-csslint");
 const autoprefixer = require("gulp-autoprefixer");
 
 // img
@@ -30,8 +29,6 @@ const path = {
 gulp.task("browser", done => {
   browsersync.init({
     server: {
-      /*baseDir: path.dist
-      index: "*.html"*/
       baseDir: path.dist,
       middleware: [
         connectSSI({
@@ -44,11 +41,6 @@ gulp.task("browser", done => {
   })
   done()
 });
-
-// browser reload
-//gulp.task("browser-reload", function(){
-  //browser.reload();
-//});
 
 // html
 gulp.task("html", done => {
@@ -67,16 +59,8 @@ gulp.task("sass", done => {
     .pipe(autoprefixer({
       cascade: false,
       grid: true
-			/*browsers: [
-				'last 2 versions',
-				'android >= 5',
-				'ios >= 10',
-				'ie >= 11'
-			]*/
     }))
     .pipe(changed(path.dist))
-    //.pipe(csslint())
-    //.pipe(csslint.reporter())
     .pipe(gulp.dest(path.dist))
     .pipe(notify("Sassをコンパイルしました！"))
     done()
